@@ -3,7 +3,6 @@ package com.danecraft.server.danecraftserver.commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 import java.util.*;
 import java.io.*;
@@ -14,18 +13,13 @@ import java.io.*;
  * ~ project outline here ~
  * @Javadoc
  */
-public class About implements CommandExecutor {
-    public About() {
+public class Help implements CommandExecutor {
+    public Help() {
 
     }
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if(!(commandSender instanceof Player)){
-            return false;
-        }
-        Player p = (Player) commandSender;
-        p.sendMessage("this server is ran and hosted by SUNY Albany video game club");
-        return true;
+        return false;
     }
 }

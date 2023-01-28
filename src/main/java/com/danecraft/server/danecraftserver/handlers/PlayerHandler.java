@@ -30,7 +30,7 @@ public class PlayerHandler implements Listener {
     @EventHandler
     public void playerJoins(PlayerJoinEvent event) {
         Player p = event.getPlayer();
-        p.sendMessage("welcome to danecraft server");
+        p.sendMessage("welcome to danecraft server /help for commands");
     }
 
     @EventHandler
@@ -49,8 +49,6 @@ public class PlayerHandler implements Listener {
             } catch (Exception e) {
                 Bukkit.getLogger().info("issue getting the stick");
                 Bukkit.getLogger().info(e.getLocalizedMessage());
-
-
             }
         }
 

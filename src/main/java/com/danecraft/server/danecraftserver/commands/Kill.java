@@ -8,24 +8,27 @@ import org.bukkit.entity.Player;
 import java.util.*;
 import java.io.*;
 
+
 /**
  * @author Theo willis
  * @version 1.0.0
  * ~ project outline here ~
  * @Javadoc
  */
-public class About implements CommandExecutor {
-    public About() {
+public class Kill implements CommandExecutor {
+    public Kill() {
 
     }
+
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if(!(commandSender instanceof Player)){
-            return false;
+            return true;
         }
         Player p = (Player) commandSender;
-        p.sendMessage("this server is ran and hosted by SUNY Albany video game club");
+        p.setHealth(0);
+        p.sendMessage("you have died");
         return true;
     }
 }

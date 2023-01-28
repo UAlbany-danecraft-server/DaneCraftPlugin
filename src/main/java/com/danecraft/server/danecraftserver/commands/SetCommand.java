@@ -5,9 +5,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.*;
-import java.io.*;
-
 
 /**
  * @author Theo willis
@@ -15,8 +12,8 @@ import java.io.*;
  * ~ project outline here ~
  * @Javadoc
  */
-public class Discord implements CommandExecutor {
-    public Discord() {
+public class SetCommand implements CommandExecutor {
+    public SetCommand() {
 
     }
 

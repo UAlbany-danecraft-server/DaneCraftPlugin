@@ -19,8 +19,16 @@ commands:
     description: chat message about where spawn is from where you are
     usage: /locateSpawn
     aliases: locateSpawn
-  Discord:
-    description: posts club discord in chat
-    usage: /discord
-    aliases: d
+  SetCommand:
+    description: sets health/hunger of players or self
+    usage: /set
+    aliases: s
 
+  Kill:
+    description: kills player command
+    usage: /Kill
+    aliases: K
+  Help:
+    description: shows player various commands etc
+    usage: /helpD
+    aliases: h

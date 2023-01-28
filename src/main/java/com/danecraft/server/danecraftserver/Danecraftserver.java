@@ -1,5 +1,7 @@
 package com.danecraft.server.danecraftserver;
 
+import com.danecraft.server.danecraftserver.commands.Help;
+import com.danecraft.server.danecraftserver.commands.Kill;
 import com.danecraft.server.danecraftserver.commands.rules;
 import com.danecraft.server.danecraftserver.handlers.PlayerHandler;
 import com.danecraft.server.danecraftserver.handlers.TorchHandler;
@@ -15,7 +17,8 @@ public final class Danecraftserver extends JavaPlugin {
         new TorchHandler(this);
         new PlayerHandler(this);
         getCommand("rules").setExecutor(new rules());
-
+        getCommand("Kill").setExecutor(new Kill());
+        getCommand("helpD").setExecutor(new Help());
     }
 
     @Override
