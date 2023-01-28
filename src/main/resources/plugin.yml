@@ -1,0 +1,26 @@
+name: Danecraftserver
+version: '${project.version}'
+main: com.danecraft.server.danecraftserver.Danecraftserver
+api-version: 1.16
+commands:
+  About:
+    description: toggles info about server
+    usage: /about
+    aliases: a
+  cleanInv:
+    description: removes blocks from inventory
+    usage: /cleanInventory
+    aliases: c
+  rules:
+    description: explains rules
+    usage: /rules
+    aliases: r
+  locateSpawn:
+    description: chat message about where spawn is from where you are
+    usage: /locateSpawn
+    aliases: locateSpawn
+  Discord:
+    description: posts club discord in chat
+    usage: /discord
+    aliases: d
+
