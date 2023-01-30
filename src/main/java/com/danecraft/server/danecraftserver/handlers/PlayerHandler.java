@@ -42,8 +42,7 @@ public class PlayerHandler implements Listener {
             try {
                 ItemStack item = in.getItem(i);
                 assert item != null;
-                if (Objects.requireNonNull(item.getItemMeta()).getDisplayName().equals("knockBack stick")
-                        && item.getType() == Material.STICK) {
+                if (item.getType() == Material.STICK && item.getEnchantments().size() > 0) {
                     item.setAmount(0);
                 }
 

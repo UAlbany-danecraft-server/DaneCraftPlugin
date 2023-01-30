@@ -8,7 +8,7 @@ commands:
     usage: /about
     aliases: a
   cleanInv:
-    description: removes blocks from inventory
+    description: removes garbo blocks from inventory
     usage: /cleanInventory
     aliases: c
   rules:
@@ -28,7 +28,7 @@ commands:
     description: kills player command
     usage: /Kill
     aliases: K
-  Help:
+  helpD:
     description: shows player various commands etc
     usage: /helpD
     aliases: h
